@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  padding-top: 10px;
+}
+
+/* HEADER */
+
+.header {
+  background-image: linear-gradient(to bottom, rgb(33, 28, 34), transparent);
+  position: sticky;
+  top: 0px;
+  padding: 5px;
+  z-index: 2;
+  height: 100px;
+}
+
+.headerFixed {
+  background-color: white;
+  background-image: none;
+  color: #f78222;
+  border-bottom: 5px solid #f78222;
+
+  transition: 1000ms;
+}
+
+.logoHeaderDiv {
+  display: inline-block;
+  margin-left: 5%;
+  padding: 3px;
+  width: 20%;
+}
+
+.academiaLogo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.academiaLogoWhite {
+  display: none;
+}
+
+.displayNone {
+  display: none;
+}
+
+.academiaLogoBlack {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.menuDiv {
+  display: inline-block;
+  padding: 3px;
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.option {
+  font-size: 20px;
+  padding: 15px;
+  font-family: "Roboto";
+  color: white;
+
+  transition: 20ms;
+}
+
+.optionFixed {
+  font-weight: bold;
+  color: #f78222;
+}
+
+.option:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #f78222;
+}
+
+/* MAIN */
+
+/* SECTION-1 */
+
+.carrocelSection {
+  height: 85vh;
+}
+
+.carrocelDiv {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slider {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.slider li {
+  position: absolute;
+  list-style: none;
+}
+
+.slider img {
+  vertical-align: top;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  position: absolute;
+  display: block;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #f78222;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  top: calc(50% - 45px);
+  transform: translateY(-50%);
+}
+
+.slider li:nth-child(2) label {
+  top: calc(50% - 15px);
+  transform: translateY(-50%);
+}
+
+.slider li:nth-child(3) label {
+  top: calc(50% + 15px);
+  transform: translateY(-50%);
+}
+
+.slider li:nth-child(4) label {
+  top: calc(50% + 45px);
+  transform: translateY(-50%);
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1000ms;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+/* SECTION-2 */
+
+.titulo {
+  color: #f78222;
+  font-family: "Roboto";
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+}
+
+.modalidadesContainer {
+  position: relative;
+  height: 350px;
+  /* height: 500px; */
+  background-color: #211c22;
+  margin: 200px 0px 150px 0px;
+}
+
+.modalidades {
+  position: absolute;
+  width: 75%;
+  height: 450px;
+  /* width: 80%;
+  height: 600px; */
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f78222;
+
+  border: 5px solid #f78222;
+}
+
+.description {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+}
+
+.modalidadeText {
+  display: inline-block;
+  height: 100%;
+  width: 34.5%;
+}
+
+.descriptionImg {
+  position: relative;
+  top: 10%;
+  left: 50px;
+  margin: 15px 0px;
+}
+
+.descriptionImg img {
+  position: relative;
+  width: 35%;
+  padding: 15px;
+  background-color: #211c22;
+  border: 3px solid #f78222;
+}
+
+.modalidadeText h2 {
+  position: absolute;
+  margin: 10px;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 50px;
+}
+
+.modalidadeText p {
+  position: absolute;
+  margin: 10px;
+  top: 65%;
+  transform: translateY(-50%);
+  width: 25%;
+  text-align: justify;
+  left: 50px;
+}
+
+.modalidadeImg {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 64.5%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.modalidadeImg img {
+  position: absolute;
+  height: 100%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  bottom: -60px;
+}
+
+.button {
+  background-color: white;
+  border: 2px solid #f78222;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 400ms;
+  transform: translateX(50%);
+}
+
+.button:hover {
+  background-color: #211c22;
+  border: 3px solid #f78222;
+}
+
+.orangeButton {
+  background-color: #f78222;
+}
+
+.buttonImg {
+  position: relative;
+  display: block;
+  width: 70%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* SECTION-3 */
+
+.comoChegarSection {
+  background-color: #211c22;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.comoChegarTexto {
+  display: inline-block;
+}
+
+.comoChegarTexto h1 {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #f78222;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.enderecoSection {
+  margin-left: 50px;
+}
+
+.enderecoSection p {
+  color: white;
+  font-size: 20px;
+}
+
+.locationButton {
+  display: inline-block;
+  margin: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 500ms;
+}
+
+.locationButton img {
+  height: 50px;
+  display: inline-block;
+}
+
+.locationButton p {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #f78222;
+  color: #f78222;
+}
+
+.locationButton:hover {
+  background-color: white;
+  color: white;
+  border: 3px solid #f78222;
+}
+
+.map {
+  float: right;
+  margin-right: 50px;
+  border: 5px solid #f78222;
+  background-color: white;
+}
+
+/* SECTION-4 */
+
+.horariosSection {
+  background-color: #211c22;
+  height: 600px;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+.horariosSection h1 {
+  position: absolute;
+  left: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #f78222;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  background-color: #211c22;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.logoFooterDiv {
+  width: 70%;
+  margin: auto;
+}
+
+.enderecoFotter {
+  position: relative;
+  text-align: left;
+}
+
+.enderecoFotter div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.midiasDiv {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.midiasButton {
+  width: 40px;
+}
+
+.midiasLogo {
+  width: 30px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.copyrightDiv {
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+}
+
+.linktrButton {
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+
+  transition: 200ms;
+}
+
+.linktrButton:hover {
+  background-color: #f78222;
+  color: black;
+  font-weight: bold;
+}
