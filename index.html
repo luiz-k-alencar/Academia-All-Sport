@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/Icon.jpg" type="image/x-icon" />
+    <title>Academia All Sport</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="logoHeaderDiv">
+        <img
+          id="academiaLogoWhite"
+          class="academiaLogo"
+          src="./assets/All sports.png"
+          alt="logo"
+        />
+        <img
+          id="academiaLogoBlack"
+          class="academiaLogo displayNone"
+          src="./assets/All sports - black.png"
+          alt="logo"
+        />
+      </div>
+      <div class="menuDiv">
+        <ul class="menu">
+          <li>
+            <a id="incioNav" class="option" href="#top">Início</a>
+          </li>
+          <li>
+            <a id="modalidadesNav" class="option" href="#modalidades"
+              >Modalidades</a
+            >
+          </li>
+          <li>
+            <a id="comoChegarNav" class="option" href="#comoChegar"
+              >Como chegar</a
+            >
+          </li>
+          <li>
+            <a id="horariosNav" class="option" href="#horarios">Horários</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section id="top" class="carrocelSection">
+        <div class="carrocelDiv">
+          <ul class="slider">
+            <li>
+              <input type="radio" name="slide" id="slide1" checked />
+              <label for="slide1"></label>
+              <img src="./assets/dance_women.jpg" alt="Mulher dançando" />
+            </li>
+            <li>
+              <input type="radio" name="slide" id="slide2" />
+              <label for="slide2"></label>
+              <img src="./assets/gym_class.jpg" alt="Aula" />
+            </li>
+            <li>
+              <input type="radio" name="slide" id="slide3" />
+              <label for="slide3"></label>
+              <img src="./assets/running_man.jpg" alt="Homem na esteira" />
+            </li>
+            <li>
+              <input type="radio" name="slide" id="slide4" />
+              <label for="slide4"></label>
+              <img src="./assets/taekwondo.jpg" alt="Taekwondo" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="modalidades" class="modalidadesSection">
+        <div class="tituloDiv">
+          <h1 class="titulo">Nossas Modalidades</h1>
+        </div>
+        <div class="modalidadesContainer">
+          <div class="modalidadesDiv">
+            <div id="modalidade1" class="modalidades">
+              <div class="description">
+                <div class="modalidadeText">
+                  <div class="descriptionImg">
+                    <img src="./assets/buttonIcons/musculação_laranja.svg" alt="musculação_laranja">   
+                  </div>
+                  <h2 class="modalidadeTitulo">Musculação</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae recusandae voluptas in repellendus eum
+                    blanditiis eligendi animi odit consequatur? Quia culpa
+                    praesentium distinctio recusandae beatae. Molestiae, ut!
+                    Explicabo, quisquam totam?
+                  </p>
+                </div>
+                <div class="modalidadeImg">
+                  <img src="./assets/workingOut_man.jpg" alt="Malhando" />
+                </div>
+              </div>
+            </div>
+            <div id="modalidade2" class="modalidades hidden">
+              <div class="description">
+                <div class="modalidadeText">
+                  <div class="descriptionImg">
+                    <img src="./assets/buttonIcons/taekwondo_laranja.svg" alt="taekwondo_laranja">   
+                  </div>
+                  <h2 class="modalidadeTitulo">Taekwondo</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae recusandae voluptas in repellendus eum
+                    blanditiis eligendi animi odit consequatur? Quia culpa
+                    praesentium distinctio recusandae beatae. Molestiae, ut!
+                    Explicabo, quisquam totam?
+                  </p>
+                </div>
+                <div class="modalidadeImg">
+                  <img src="./assets/taekwondo.jpg" alt="Corrida" />
+                </div>
+              </div>
+            </div>
+            <div id="modalidade3" class="modalidades hidden">
+              <div class="description">
+                <div class="modalidadeText">
+                  <div class="descriptionImg">
+                    <img src="./assets/buttonIcons/jump_laranja.svg" alt="jump_laranja">   
+                  </div>
+                  <h2 class="modalidadeTitulo">Jump</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae recusandae voluptas in repellendus eum
+                    blanditiis eligendi animi odit consequatur? Quia culpa
+                    praesentium distinctio recusandae beatae. Molestiae, ut!
+                    Explicabo, quisquam totam?
+                  </p>
+                </div>
+                <div class="modalidadeImg">
+                  <img src="./assets/jump_class.jpeg" alt="jump" />
+                </div>
+              </div>
+            </div>
+            <div id="modalidade4" class="modalidades hidden">
+              <div class="description">
+                <div class="modalidadeText">
+                  <div class="descriptionImg">
+                    <img src="./assets/buttonIcons/bale_laranja.svg" alt="bale_laranja">   
+                  </div>
+                  <h2 class="modalidadeTitulo">Balé</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae recusandae voluptas in repellendus eum
+                    blanditiis eligendi animi odit consequatur? Quia culpa
+                    praesentium distinctio recusandae beatae. Molestiae, ut!
+                    Explicabo, quisquam totam?
+                  </p>
+                </div>
+                <div class="modalidadeImg">
+                  <img src="./assets/bale_class.jpg" alt="bale" />
+                </div>
+              </div>
+            </div>
+            <div id="modalidade5" class="modalidades hidden">
+              <div class="description">
+                <div class="modalidadeText">
+                  <div class="descriptionImg">
+                    <img src="./assets/buttonIcons/dance_laranja.svg" alt="dance_laranja">   
+                  </div>
+                  <h2 class="modalidadeTitulo">Fit Dance</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae recusandae voluptas in repellendus eum
+                    blanditiis eligendi animi odit consequatur? Quia culpa
+                    praesentium distinctio recusandae beatae. Molestiae, ut!
+                    Explicabo, quisquam totam?
+                  </p>
+                </div>
+                <div class="modalidadeImg">
+                  <img src="./assets/fit_dance.jpeg" alt="Fit Dance" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <div
+              id="button1"
+              class="button orangeButton"
+              onclick="changeTo1()"
+            >
+              <img
+                id="img1Laranja"
+                class="hidden"
+                src="./assets/buttonIcons/musculação_laranja.svg"
+                alt=""
+              />
+              <img
+                id="img1Branca"
+                class="buttonImg"
+                src="./assets/buttonIcons/musculação_branco.svg"
+                alt=""
+              />
+            </div>
+            <div
+              id="button2"
+              class="button"
+              onclick="changeTo2()"
+            >
+              <img
+                id="img2Laranja"
+                class="buttonImg"
+                src="./assets/buttonIcons/taekwondo_laranja.svg"
+                alt=""
+              />
+              <img
+                id="img2Branca"
+                class="hidden"
+                src="./assets/buttonIcons/taekwondo_branco.svg"
+                alt=""
+              />
+            </div>
+            <div
+              id="button3"
+              class="button"
+              onclick="changeTo3()"
+            >
+              <img
+                id="img3Laranja"
+                class="buttonImg"
+                src="./assets/buttonIcons/jump_laranja.svg"
+                alt=""
+              />
+              <img
+                id="img3Branca"
+                class="hidden"
+                src="./assets/buttonIcons/jump_branco.svg"
+                alt=""
+              />
+            </div>
+            <div
+              id="button4"
+              class="button"
+              onclick="changeTo4()"
+            >
+              <img
+                id="img4Laranja"
+                class="buttonImg"
+                src="./assets/buttonIcons/bale_laranja.svg"
+                alt=""
+              />
+              <img
+                id="img4Branca"
+                class="hidden"
+                src="./assets/buttonIcons/bale_branco.svg"
+                alt=""
+              />
+            </div>
+            <div
+              id="button5"
+              class="button"
+              onclick="changeTo5()"
+            >
+              <img
+                id="img5Laranja"
+                class="buttonImg"
+                src="./assets/buttonIcons/dance_laranja.svg"
+                alt=""
+              />
+              <img
+                id="img5Branca"
+                class="hidden"
+                src="./assets/buttonIcons/dance_branco.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="comoChegar" class="comoChegarSection">
+        <div class="comoChegarTexto">
+          <h1 class="titulo">Como Chegar</h1>
+          <div class="enderecoSection">
+            <div>
+              <p>R. Clara Endlich, 205</p>
+              <p>Centro</p>
+              <p>Marechal Floriano - ES</p>
+              <p>CEP: 29255-000</p>
+            </div>
+          </div>
+          <a
+            class="locationButton"
+            href="https://maps.google.com/maps?ll=-20.414801,-40.675428&z=19&t=m&hl=pt-BR&gl=BR&mapclient=embed&daddr=Academia%20All%20Sports%20R.%20Clara%20Endlich%2C%20205%20-%20Centro%20Mal.%20Floriano%20-%20ES%2029255-000@-20.4148012,-40.6754279"
+          >
+            <img src="./assets/buttonIcons/map.svg" alt="Map Icon" />
+            <p>Clique aqui para solicitar sua rota!</p>
+          </a>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d572.1249287121955!2d-40.675679214511575!3d-20.415228718668484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef83069f7f3a1f0a!2sAcademia%20All%20Sports!5e0!3m2!1spt-BR!2sbr!4v1622567883095!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+      <section id="horarios" class="horariosSection">
+        <h1 class="titulo">Horários</h1>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="logoFooterDiv">
+        <img class="academiaLogo" src="./assets/All sports.png" alt="logo" />
+      </div>
+      <div class="enderecoFotter">
+        <div>
+          <p>R. Clara Endlich, 205</p>
+          <p>Centro</p>
+          <p>Marechal Floriano - ES</p>
+          <p>CEP: 29255-000</p>
+        </div>
+      </div>
+      <div class="midiasDiv">
+        <a
+          class="midiasButton"
+          href="https://www.instagram.com/allsportsacademia/"
+          ><img
+            class="midiasLogo"
+            src="./assets/instagram.svg"
+            alt="instagram-logo"
+        /></a>
+        <a
+          class="midiasButton"
+          href="https://www.facebook.com/academiaallsports/"
+          ><img
+            class="midiasLogo"
+            src="./assets/facebook.svg"
+            alt="instagram-logo"
+        /></a>
+        <a class="midiasButton" href="https://twitter.com/allsportsmf"
+          ><img
+            class="midiasLogo"
+            src="./assets/twitter.svg"
+            alt="instagram-logo"
+        /></a>
+        <a class="midiasButton" href="https://wa.me/+5527998379785/?text=Olá!"
+          ><img
+            class="midiasLogo"
+            src="./assets/whatsapp.svg"
+            alt="instagram-logo"
+        /></a>
+      </div>
+    </footer>
+    <div class="copyrightDiv">
+      <a class="linktrButton" href="https://linktr.ee/luiz.lfka">
+        Copiright © por Luiz F. K. Alencar.
+      </a>
+    </div>
+
+    <script src="./js/headerChange.js"></script>
+    <script src="./js/smoothScroll.js"></script>
+    <script src="./js/modalities.js"></script>
+  </body>
+</html>
