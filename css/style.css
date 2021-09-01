@@ -1,9 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900%display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  font-family: "Roboto";
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -11,175 +12,101 @@ a {
   text-decoration: none;
 }
 
-section {
-  padding-top: 10px;
-}
-
 /* HEADER */
 
-.header {
+header{
   background-image: linear-gradient(to bottom, rgb(33, 28, 34), transparent);
-  position: sticky;
-  top: 0px;
-  padding: 5px;
-  z-index: 2;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  transition: 500ms;
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+header.sticky{
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  background-image: none;
+  padding: 0px 50px;
+}
+
+header .logo{
   height: 100px;
 }
 
-.headerFixed {
-  background-color: white;
-  background-image: none;
-  color: #f78222;
-  border-bottom: 5px solid #f78222;
-
-  transition: 1000ms;
-}
-
-.logoHeaderDiv {
-  display: inline-block;
-  margin-left: 5%;
-  padding: 3px;
-  width: 20%;
-}
-
-.academiaLogo {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.academiaLogoWhite {
+header .black{
   display: none;
 }
 
-.displayNone {
+header .white{
+  display: flex
+}
+
+header.sticky .black{
+ display: flex;
+}
+
+header.sticky .white{
   display: none;
 }
 
-.academiaLogoBlack {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
+header ul{
+  position: relative;
+  margin-bottom: 0px;
+  display: flex;
 }
 
-.menuDiv {
+header ul li{
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
   display: inline-block;
-  padding: 3px;
-  width: 60%;
+  position: relative;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
+  transition: 200ms;
+  font-size: 1.2em;
+  margin: 0px 15px;
+  font-weight: 500;
+  color: #fff;
 }
 
-.menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.option {
-  font-size: 20px;
-  padding: 15px;
-  font-family: "Roboto";
-  color: white;
-
-  transition: 20ms;
-}
-
-.optionFixed {
-  font-weight: bold;
+header.sticky ul li a{
   color: #f78222;
 }
 
-.option:hover {
+header ul li a:hover{
+  border-bottom: 4px solid #f78222;
   font-weight: bold;
-  border-bottom: 3px solid #f78222;
+  color: #fff;
+}
+
+header.sticky ul li a:hover{
+  color: #f78222;
 }
 
 /* MAIN */
 
-/* SECTION-1 */
+/* BANNER */
 
-.carrocelSection {
-  height: 85vh;
-}
-
-.carrocelDiv {
-  position: absolute;
-  top: 0px;
-  width: 100%;
+.carousel,
+.slide{
   height: 100vh;
   overflow: hidden;
-  z-index: 1;
 }
 
-.slider {
-  position: relative;
-  display: block;
-  margin: auto;
-}
 
-.slider li {
-  position: absolute;
-  list-style: none;
-}
+/*
 
-.slider img {
-  vertical-align: top;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-}
-
-.slider input {
-  display: none;
-}
-
-.slider label {
-  position: absolute;
-  display: block;
-  right: 10px;
-  cursor: pointer;
-  border-radius: 10px;
-  width: 15px;
-  height: 15px;
-  background-color: #f78222;
-  z-index: 10;
-}
-
-.slider li:nth-child(1) label {
-  top: calc(50% - 45px);
-  transform: translateY(-50%);
-}
-
-.slider li:nth-child(2) label {
-  top: calc(50% - 15px);
-  transform: translateY(-50%);
-}
-
-.slider li:nth-child(3) label {
-  top: calc(50% + 15px);
-  transform: translateY(-50%);
-}
-
-.slider li:nth-child(4) label {
-  top: calc(50% + 45px);
-  transform: translateY(-50%);
-}
-
-.slider img {
-  opacity: 0;
-  visibility: hidden;
-  transition: 1000ms;
-}
-
-.slider li input:checked ~ img {
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
-}
-
-/* SECTION-2 */
+SECTION-2
 
 .titulo {
   color: #f78222;
@@ -192,7 +119,6 @@ section {
 .modalidadesContainer {
   position: relative;
   height: 350px;
-  /* height: 500px; */
   background-color: #211c22;
   margin: 200px 0px 150px 0px;
 }
@@ -201,8 +127,7 @@ section {
   position: absolute;
   width: 75%;
   height: 450px;
-  /* width: 80%;
-  height: 600px; */
+
   top: -180px;
   left: 50%;
   transform: translateX(-50%);
@@ -316,7 +241,7 @@ section {
   transform: translateY(-50%);
 }
 
-/* SECTION-3 */
+SECTION-3
 
 .comoChegarSection {
   background-color: #211c22;
@@ -379,7 +304,7 @@ section {
   background-color: white;
 }
 
-/* SECTION-4 */
+SECTION-4
 
 .horariosSection {
   background-color: #211c22;
@@ -398,7 +323,7 @@ section {
   margin-bottom: 20px;
 }
 
-/* FOOTER */
+FOOTER
 
 .footer {
   display: grid;
@@ -459,4 +384,4 @@ section {
   background-color: #f78222;
   color: black;
   font-weight: bold;
-}
+} */

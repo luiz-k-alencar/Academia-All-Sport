@@ -4,54 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./assets/Icon.jpg" type="image/x-icon" />
+
     <title>Academia All Sport</title>
   </head>
   <body>
     <header id="header" class="header">
-      <div class="logoHeaderDiv">
-        <img
-          id="academiaLogoWhite"
-          class="academiaLogo"
-          src="./assets/All sports.png"
-          alt="logo"
-        />
-        <img
-          id="academiaLogoBlack"
-          class="academiaLogo displayNone"
-          src="./assets/All sports - black.png"
-          alt="logo"
-        />
-      </div>
-      <div class="menuDiv">
-        <ul class="menu">
-          <li>
-            <a id="incioNav" class="option" href="#top">Início</a>
-          </li>
-          <li>
-            <a id="modalidadesNav" class="option" href="#modalidades"
-              >Modalidade</a
-            >
-          </li>
-          <li>
-            <a id="comoChegarNav" class="option" href="#comoChegar"
-              >Como chegar</a
-            >
-          </li>
-          <li>
-            <a id="horariosNav" class="option" href="#horarios">Horários</a>
-          </li>
-        </ul>
-      </div>
+      <a class="logo white" href="#home"><img src="./assets/logo.png" alt="logo" /></a>
+      <a class="logo black" href="#home"><img src="./assets/logo_black.png" alt="logo" /></a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li><a href="#banner" onclick="toggleMenu();">Início</a></li>
+        <li><a href="#modalities" onclick="toggleMenu();">Modalidades</a></li>
+        <li><a href="#howToGet" onclick="toggleMenu();">Como Chegar</a></li>
+        <li><a href="#schedule" onclick="toggleMenu();">Horários</a></li>
+      </ul>
     </header>
+
+    <section id="home" class="banner">
+      <div
+        id="banner"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#banner"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#banner"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#banner"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#banner"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/dance_women.jpg" class="d-block w-100" alt="Aula de dança" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/gym_class.jpg" class="d-block w-100" alt="Aula com personal" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/taekwondo.jpg" class="d-block w-100" alt="Taekwondo" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/running_man.jpg" class="d-block w-100" alt="Homem correndo" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#banner"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#banner"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section style="padding: 100px;"></section>
+
+
+    <!--     
     <main class="main">
-      <section id="top" class="carrocelSection">
+      <section id="banner" class="carrocelSection">
         <div class="carrocelDiv">
           <ul class="slider">
             <li>
@@ -77,7 +128,7 @@
           </ul>
         </div>
       </section>
-      <section id="modalidades" class="modalidadesSection">
+      <section id="modalities" class="modalidadesSection">
         <div class="tituloDiv">
           <h1 class="titulo">Nossas Modalidades</h1>
         </div>
@@ -278,7 +329,7 @@
           </div>
         </div>
       </section>
-      <section id="comoChegar" class="comoChegarSection">
+      <section id="howToGet" class="comoChegarSection">
         <div class="comoChegarTexto">
           <h1 class="titulo">Como Chegar</h1>
           <div class="enderecoSection">
@@ -308,7 +359,7 @@
           ></iframe>
         </div>
       </section>
-      <section id="horarios" class="horariosSection">
+      <section id="schedule" class="horariosSection">
         <h1 class="titulo">Horários</h1>
       </section>
       
@@ -358,13 +409,49 @@
       </div>
     </footer>
     <div class="copyrightDiv">
-      <a class="linktrButton" href="https://linktr.ee/luiz.lfka">
-        Copiright © por Luiz F. K. Alencar.
+      <a class="linktrButton" href="https://linkbook.bio/luiz.lfka">
+        Copiright © por Alenk Technologies.
       </a>
-    </div>
+    </div> -->
 
+    <!-- 
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      // function toggleMenu() {
+      //   var menuToggle = document.querySelector(".toggle");
+      //   var menu = document.querySelector(".menu");
+      //   menuToggle.classList.toggle("active");
+      //   menu.classList.toggle("active");
+      // }
+    </script> -->
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menu");
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 
     <script src="./js/headerChange.js"></script>
     <script src="./js/smoothScroll.js"></script>
-    <script src="./js/modalities.js"></script>
+    <script src="./js/modalities.js"></script> -->
   </body>
 </html>
